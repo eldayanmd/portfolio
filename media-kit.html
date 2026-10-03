@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dayan Marrero — Media Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       MEDIA KIT — Dayan Marrero
+       Estilo consistente con la web principal
+       ============================================================ */
+
+    :root{
+      --bg:#0b0d12;
+      --panel:#12151d;
+      --panel2:#171b25;
+      --text:#f4f5f7;
+      --muted:#a2a8b6;
+      --line:#292e3a;
+      --lime:#c9fa72;
+      --purple:#b49aff;
+      --font:'DM Sans',sans-serif;
+      --display:'Space Grotesk',sans-serif;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    html,body{
+      background:#1a1d24;
+      font-family:var(--font);
+      color:var(--text);
+      line-height:1.6;
+      -webkit-print-color-adjust:exact;
+      print-color-adjust:exact;
+    }
+
+    /* ============================================================
+       PÁGINA A4
+       ============================================================ */
+    .page{
+      width:210mm;
+      height:297mm;
+      background:var(--bg);
+      margin:10mm auto;
+      padding:18mm 16mm;
+      position:relative;
+      overflow:hidden;
+      box-shadow:0 20px 60px #0008;
+      page-break-after:always;
+      display:flex;
+      flex-direction:column;
+    }
+    .page:last-child{page-break-after:auto}
+
+    /* Marca de agua / número de página */
+    .page-number{
+      position:absolute;
+      bottom:8mm;
+      right:16mm;
+      font-size:9px;
+      letter-spacing:.15em;
+      color:#5a6272;
+    }
+    .page-brand{
+      position:absolute;
+      bottom:8mm;
+      left:16mm;
+      font-size:9px;
+      letter-spacing:.15em;
+      color:#5a6272;
+    }
+
+    /* ============================================================
+       PORTADA
+       ============================================================ */
+    .cover{
+      justify-content:space-between;
+      background:
+        radial-gradient(ellipse at 100% 0%, #b49aff1b, transparent 50%),
+        radial-gradient(ellipse at 0% 100%, #c9fa7218, transparent 50%),
+        var(--bg);
+    }
+    .cover-top{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+    }
+    .brand{
+      display:inline-flex;
+      align-items:center;
+      gap:11px;
+      font-size:11px;
+      letter-spacing:.18em;
+      font-weight:700;
+    }
+    .brand-mark{
+      display:grid;
+      place-items:center;
+      width:36px;height:36px;
+      background:var(--lime);
+      color:#10130b;
+      border-radius:11px;
+      font-family:var(--display);
+      font-size:18px;
+      letter-spacing:-.08em;
+    }
+    .cover-year{
+      font-size:10px;
+      letter-spacing:.18em;
+      color:var(--lime);
+      border:1px solid #c9fa7240;
+      padding:6px 12px;
+      border-radius:6px;
+    }
+
+    .cover-center{
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+    .cover-eyebrow{
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.22em;
+      color:#b8becb;
+      display:flex;
+      align-items:center;
+      gap:9px;
+      margin-bottom:24px;
+    }
+    .live-dot{
+      width:7px;height:7px;
+      border-radius:50%;
+      background:var(--lime);
+      box-shadow:0 0 12px #c9fa7280;
+    }
+    .cover-title{
+      font-family:var(--display);
+      font-weight:600;
+      font-size:64px;
+      line-height:1.02;
+      letter-spacing:-.06em;
+      margin-bottom:24px;
+    }
+    .gradient-text{
+      background:linear-gradient(100deg,var(--lime),#a8e9d0 55%,var(--purple));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+    .cover-subtitle{
+      font-size:14px;
+      color:#b0b6c3;
+      max-width:130mm;
+      line-height:1.8;
+    }
+
+    .cover-bottom{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:10mm;
+      padding-top:10mm;
+      border-top:1px solid var(--line);
+    }
+    .cover-contact-item span{
+      display:block;
+      font-size:9px;
+      letter-spacing:.16em;
+      color:#7c8493;
+      margin-bottom:4px;
+    }
+    .cover-contact-item strong{
+      font-size:12px;
+      font-weight:600;
+      color:var(--text);
+    }
+
+    /* ============================================================
+       ENCABEZADOS DE SECCIÓN
+       ============================================================ */
+    .section-eyebrow{
+      font-size:9px;
+      font-weight:700;
+      letter-spacing:.22em;
+      color:var(--lime);
+      margin-bottom:8px;
+    }
+    .section-title{
+      font-family:var(--display);
+      font-weight:600;
+      font-size:34px;
+      line-height:1.08;
+      letter-spacing:-.05em;
+      margin-bottom:14px;
+    }
+    .section-lead{
+      font-size:12px;
+      color:#a8afbc;
+      line-height:1.9;
+      max-width:150mm;
+      margin-bottom:10mm;
+    }
+    .divider{
+      height:1px;
+      background:var(--line);
+      margin:8mm 0;
+    }
+
+    /* ============================================================
+       ABOUT
+       ============================================================ */
+    .about-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10mm;
+      margin-top:4mm;
+    }
+    .about-text p{
+      font-size:12px;
+      color:#c4c9d3;
+      line-height:1.95;
+      margin-bottom:16px;
+    }
+    .about-text p strong{color:var(--text)}
+    .about-facts{
+      display:grid;
+      gap:14px;
+    }
+    .fact{
+      background:var(--panel);
+      border:1px solid #ffffff12;
+      border-radius:12px;
+      padding:16px 18px;
+    }
+    .fact span{
+      display:block;
+      font-size:9px;
+      letter-spacing:.16em;
+      color:#7c8493;
+      margin-bottom:4px;
+    }
+    .fact strong{
+      font-size:13px;
+      font-weight:600;
+      color:var(--text);
+    }
+    .fact small{
+      display:block;
+      font-size:10px;
+      color:#8f97a5;
+      margin-top:3px;
+    }
+
+    /* ============================================================
+       MÉTRICAS
+       ============================================================ */
+    .metrics-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:6mm;
+      margin-bottom:8mm;
+    }
+    .metric-box{
+      background:var(--panel);
+      border:1px solid #ffffff12;
+      border-radius:12px;
+      padding:20px 18px;
+    }
+    .metric-box span{
+      display:block;
+      font-size:9px;
+      letter-spacing:.16em;
+      color:#7c8493;
+      margin-bottom:8px;
+    }
+    .metric-box strong{
+      font-family:var(--display);
+      font-size:30px;
+      font-weight:600;
+      letter-spacing:-.05em;
+      line-height:1.1;
+    }
+    .metric-box strong em{
+      font-style:normal;
+      color:var(--lime);
+    }
+    .metric-box small{
+      display:block;
+      font-size:10px;
+      color:#8f97a5;
+      margin-top:6px;
+    }
+
+    .metrics-list{
+      background:var(--panel);
+      border:1px solid #ffffff12;
+      border-radius:12px;
+      padding:20px 22px;
+    }
+    .metrics-list h4{
+      font-family:var(--display);
+      font-size:13px;
+      letter-spacing:-.02em;
+      margin-bottom:12px;
+      color:var(--lime);
+    }
+    .metrics-list ul{
+      list-style:none;
+      display:grid;
+      gap:9px;
+    }
+    .metrics-list li{
+      font-size:11px;
+      color:#c4c9d3;
+      display:flex;
+      justify-content:space-between;
+      padding-bottom:9px;
+      border-bottom:1px solid #ffffff0a;
+    }
+    .metrics-list li:last-child{border-bottom:0;padding-bottom:0}
+    .metrics-list li span{color:#8f97a5}
+    .metrics-list li strong{color:var(--text);font-weight:600}
+
+    /* ============================================================
+       SERVICIOS
+       ============================================================ */
+    .services-list{
+      display:grid;
+      gap:5mm;
+    }
+    .service-row{
+      background:var(--panel);
+      border:1px solid #ffffff12;
+      border-radius:12px;
+      padding:18px 20px;
+      display:grid;
+      grid-template-columns:auto 1fr;
+      gap:18px;
+      align-items:start;
+    }
+    .service-row .num{
+      font-family:var(--display);
+      font-size:13px;
+      color:var(--lime);
+      padding-top:2px;
+      letter-spacing:.05em;
+    }
+    .service-row h4{
+      font-family:var(--display);
+      font-size:15px;
+      letter-spacing:-.02em;
+      margin-bottom:5px;
+    }
+    .service-row p{
+      font-size:11px;
+      color:#a8afbc;
+      line-height:1.75;
+    }
+    .service-row small{
+      display:block;
+      font-size:9px;
+      color:#7c8493;
+      margin-top:6px;
+      letter-spacing:.04em;
+    }
+
+    .includes-box{
+      margin-top:8mm;
+      background:radial-gradient(ellipse at 0% 0%,#c9fa7212,transparent 60%),var(--panel);
+      border:1px solid #c9fa7233;
+      border-radius:12px;
+      padding:20px 22px;
+    }
+    .includes-box h4{
+      font-family:var(--display);
+      font-size:13px;
+      color:var(--lime);
+      margin-bottom:12px;
+      letter-spacing:.02em;
+    }
+    .includes-box ul{
+      list-style:none;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:9px 20px;
+    }
+    .includes-box li{
+      font-size:11px;
+      color:#c4c9d3;
+      display:flex;
+      align-items:center;
+      gap:9px;
+    }
+    .includes-box li::before{
+      content:"";
+      width:5px;height:5px;
+      border-radius:50%;
+      background:var(--lime);
+      flex-shrink:0;
+    }
+
+    /* ============================================================
+       PROCESO
+       ============================================================ */
+    .process-grid{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:5mm;
+      margin-bottom:10mm;
+    }
+    .step{
+      background:var(--panel);
+      border:1px solid #ffffff12;
+      border-radius:12px;
+      padding:18px 14px;
+      position:relative;
+    }
+    .step .step-num{
+      font-family:var(--display);
+      font-size:11px;
+      color:var(--lime);
+      letter-spacing:.1em;
+      margin-bottom:14px;
+    }
+    .step h5{
+      font-family:var(--display);
+      font-size:12px;
+      letter-spacing:-.02em;
+      margin-bottom:6px;
+    }
+    .step p{
+      font-size:10px;
+      color:#8f97a5;
+      line-height:1.65;
+    }
+
+    /* ============================================================
+       CONTACTO FINAL
+       ============================================================ */
+    .contact-final{
+      margin-top:auto;
+      background:
+        radial-gradient(ellipse at 100% 0%,#b49aff1b,transparent 43%),
+        radial-gradient(ellipse at 0% 100%,#c9fa7210,transparent 40%),
+        var(--panel);
+      border:1px solid #ffffff1b;
+      border-radius:16px;
+      padding:26px 28px;
+    }
+    .contact-final .section-eyebrow{
+      display:flex;
+      align-items:center;
+      gap:9px;
+    }
+    .contact-final h3{
+      font-family:var(--display);
+      font-size:26px;
+      letter-spacing:-.04em;
+      margin:12px 0 6px;
+    }
+    .contact-final p{
+      font-size:12px;
+      color:#a8afbc;
+      margin-bottom:18px;
+    }
+    .contact-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:8mm;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+    }
+    .contact-grid div span{
+      display:block;
+      font-size:9px;
+      letter-spacing:.16em;
+      color:#7c8493;
+      margin-bottom:4px;
+    }
+    .contact-grid div strong{
+      font-size:12px;
+      font-weight:600;
+      color:var(--text);
+    }
+
+    /* ============================================================
+       IMPRESIÓN
+       ============================================================ */
+    @page{
+      size:A4;
+      margin:0;
+    }
+    @media print{
+      html,body{background:var(--bg)}
+      .page{
+        margin:0;
+        box-shadow:none;
+        width:210mm;
+        height:297mm;
+        page-break-after:always;
+      }
+      .page:last-child{page-break-after:auto}
+    }
+
+    /* ============================================================
+       RESPONSIVE (solo para previsualizar en pantalla)
+       ============================================================ */
+    @media screen and (max-width:900px){
+      .page{
+        width:100%;
+        height:auto;
+        min-height:auto;
+        margin:0;
+        padding:40px 24px;
+      }
+      .cover-title{font-size:42px}
+      .section-title{font-size:26px}
+      .about-grid,
+      .metrics-grid,
+      .process-grid,
+      .contact-grid{grid-template-columns:1fr}
+      .includes-box ul{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       PÁGINA 1 — PORTADA
+       ============================================================ -->
+  <section class="page cover">
+    <div class="cover-top">
+      <div class="brand">
+        <span class="brand-mark">D.</span>
+        <span>DAYAN MARRERO</span>
+      </div>
+      <div class="cover-year">MEDIA KIT 2026</div>
+    </div>
+
+    <div class="cover-center">
+      <div class="cover-eyebrow">
+        <span class="live-dot"></span>
+        TECH CONTENT CREATOR · UGC CREATOR
+      </div>
+      <h1 class="cover-title">
+        Making tech feel<br>
+        <span class="gradient-text">useful, simple</span><br>
+        and human.
+      </h1>
+      <p class="cover-subtitle">
+        Practical product demonstrations, honest-style reviews, and short-form videos that help people understand how products fit into real life.
+      </p>
+    </div>
+
+    <div class="cover-bottom">
+      <div class="cover-contact-item">
+        <span>INSTAGRAM</span>
+        <strong>@dayan.marrero1</strong>
+      </div>
+      <div class="cover-contact-item">
+        <span>TIKTOK</span>
+        <strong>@Dayan.tech.home</strong>
+      </div>
+      <div class="cover-contact-item">
+        <span>EMAIL</span>
+        <strong>marrerodayan82@gmail.com</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PÁGINA 2 — SOBRE MÍ
+       ============================================================ -->
+  <section class="page">
+    <div class="section-eyebrow">ABOUT ME</div>
+    <h2 class="section-title">
+      Technology, without<br>
+      the <span class="gradient-text">unnecessary jargon.</span>
+    </h2>
+    <p class="section-lead">
+      I create technology-focused content for people who want to get more out of their devices and discover useful products.
+    </p>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm <strong>Dayan</strong>, a technology content creator based in EE.UU, focused on making tech feel useful, simple, and human.
+        </p>
+        <p>
+          My style combines <strong>clear explanations</strong>, <strong>practical demonstrations</strong>, and a creator-first approach designed for social platforms.
+        </p>
+        <p>
+          From gadgets and connectivity products to everyday tech tips, I aim to make each video <strong>informative, relatable, and easy to watch</strong>.
+        </p>
+      </div>
+
+      <div class="about-facts">
+        <div class="fact">
+          <span>BASED IN</span>
+          <strong>EE.UU</strong>
+          <small>Available for remote projects worldwide</small>
+        </div>
+        <div class="fact">
+          <span>CONTENT IN</span>
+          <strong>English & Spanish</strong>
+          <small>Bilingual creator</small>
+        </div>
+        <div class="fact">
+          <span>CORE NICHE</span>
+          <strong>Technology</strong>
+          <small>Gadgets · Tips · Product demos</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-number">02 / 05</div>
+    <div class="page-brand">DAYAN MARRERO · MEDIA KIT</div>
+  </section>
+
+  <!-- ============================================================
+       PÁGINA 3 — MÉTRICAS
+       ============================================================ -->
+  <section class="page">
+    <div class="section-eyebrow">CREATOR SNAPSHOT</div>
+    <h2 class="section-title">
+      A community built<br>
+      around <span class="gradient-text">technology.</span>
+    </h2>
+    <p class="section-lead">
+      Current performance and audience data across my main platforms.
+    </p>
+
+    <div class="metrics-grid">
+      <div class="metric-box">
+        <span>INSTAGRAM FOLLOWERS</span>
+        <strong>18,000<em>+</em></strong>
+        <small>Technology-focused audience</small>
+      </div>
+      <div class="metric-box">
+        <span>BEST REEL VIEWS</span>
+        <strong>500,000<em>+</em></strong>
+        <small>Top performing video</small>
+      </div>
+      <div class="metric-box">
+        <span>CONTENT FORMAT</span>
+        <strong>Short-form</strong>
+        <small>Reels and vertical video</small>
+      </div>
+    </div>
+
+    <div class="metrics-list">
+      <h4>PERFORMANCE HIGHLIGHTS</h4>
+      <ul>
+        <li><span>Average views per Reel</span><strong>70k-500k</strong></li>
+        <li><span>Best engagement rate</span><strong>7.5%</strong></li>
+        <li><span>Best reach (accounts)</span><strong>100k+</strong></li>
+        <li><span>Primary audience age</span><strong>18–34 years old</strong></li>
+        <li><span>Top audience locations</span><strong>Estados Unidos, España, Canadá, Cuba, Brasil, Argentina</strong></li>
+      </ul>
+    </div>
+
+    <div class="page-number">03 / 05</div>
+    <div class="page-brand">DAYAN MARRERO · MEDIA KIT</div>
+  </section>
+
+  <!-- ============================================================
+       PÁGINA 4 — SERVICIOS
+       ============================================================ -->
+  <section class="page">
+    <div class="section-eyebrow">SERVICES</div>
+    <h2 class="section-title">
+      Content built for<br>
+      <span class="gradient-text">brands that need results.</span>
+    </h2>
+    <p class="section-lead">
+      Pick a single deliverable or combine them into a custom package tailored to your product and platform.
+    </p>
+
+    <div class="services-list">
+
+      <div class="service-row">
+        <div class="num">01</div>
+        <div>
+          <h4>UGC Video</h4>
+          <p>Vertical, social-first videos that introduce your product and show how it fits into real life. Perfect for Reels, TikTok, and paid ads.</p>
+          <small>Script · Hook · Vertical 9:16 · 1 revision</small>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="num">02</div>
+        <div>
+          <h4>Product Demo</h4>
+          <p>A clear, practical walkthrough of your product's features and how they work — ideal for tech, gadgets, and connectivity products.</p>
+          <small>Feature walkthrough · Real use cases · Short-form</small>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="num">03</div>
+        <div>
+          <h4>Review & Tutorial</h4>
+          <p>Honest-style reviews and easy-to-follow tutorials that help your audience understand the product and trust the brand.</p>
+          <small>Review or how-to · Voiceover or on-cam</small>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="num">04</div>
+        <div>
+          <h4>Content Package</h4>
+          <p>Multiple videos delivered together for a full campaign — best value and consistency for your brand's social presence.</p>
+          <small>3–5 videos · Consistent style · Priority delivery</small>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="includes-box">
+      <h4>ALL SERVICES INCLUDE</h4>
+      <ul>
+        <li>Usage rights for organic social</li>
+        <li>Vertical format (9:16)</li>
+        <li>Delivery in 5–7 business days</li>
+        <li>1 round of revisions</li>
+        <li>Paid ads & whitelisting on request</li>
+        <li>Bilingual content (EN / ES)</li>
+      </ul>
+    </div>
+
+    <div class="page-number">04 / 05</div>
+    <div class="page-brand">DAYAN MARRERO · MEDIA KIT</div>
+  </section>
+
+  <!-- ============================================================
+       PÁGINA 5 — PROCESO + CONTACTO
+       ============================================================ -->
+  <section class="page">
+    <div class="section-eyebrow">HOW IT WORKS</div>
+    <h2 class="section-title">
+      A simple, clear<br>
+      <span class="gradient-text">collaboration process.</span>
+    </h2>
+
+    <div class="process-grid">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h5>Reach out</h5>
+        <p>Email or DM with your product and goals.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h5>Align</h5>
+        <p>We define the brief, style, and deliverables.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h5>Create</h5>
+        <p>I produce the content and send a first draft.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h5>Revise</h5>
+        <p>You request changes if needed.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <h5>Deliver</h5>
+        <p>Final files delivered within 5–7 days.</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="contact-final">
+      <div class="section-eyebrow">
+        <span class="live-dot"></span>
+        OPEN TO COLLABORATIONS
+      </div>
+      <h3>Let's create something<br>worth watching.</h3>
+      <p>Available for brand collaborations, product launches, and UGC campaigns.</p>
+
+      <div class="contact-grid">
+        <div>
+          <span>EMAIL</span>
+          <strong>marrerodayan82@gmail.com</strong>
+        </div>
+        <div>
+          <span>INSTAGRAM</span>
+          <strong>@dayan.marrero1</strong>
+        </div>
+        <div>
+          <span>TIKTOK</span>
+          <strong>@Dayan.tech.home</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-number">05 / 05</div>
+    <div class="page-brand">DAYAN MARRERO · MEDIA KIT</div>
+  </section>
+
+</body>
+</html>
