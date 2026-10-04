@@ -9,16 +9,29 @@
   <title>Dayan Marrero | Tech UGC Creator</title>
   <meta name="description" content="Dayan Marrero — technology content creator and UGC creator. Product demos, reviews and short-form video that make tech feel useful, simple and human.">
   <meta name="author" content="Dayan Marrero">
+  <meta name="keywords" content="UGC creator, tech content creator, product demos, short-form video, tech reviews, gadget content, bilingual creator, English Spanish creator">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="rating" content="general">
+  <link rel="canonical" href="https://dayan-marrero.pages.dev/">
+
+  <!-- App-like en móviles -->
+  <meta name="msapplication-TileColor" content="#0b0d12">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Dayan Marrero">
+  <meta name="format-detection" content="telephone=no">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23c9fa72'/%3E%3Ctext x='50' y='72' font-family='Arial,sans-serif' font-size='68' font-weight='bold' text-anchor='middle' fill='%2310130b'%3ED.%3C/text%3E%3C/svg%3E">
   <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23c9fa72'/%3E%3Ctext x='50' y='72' font-family='Arial,sans-serif' font-size='68' font-weight='bold' text-anchor='middle' fill='%2310130b'%3ED.%3C/text%3E%3C/svg%3E">
 
-  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Dayan Marrero | Tech UGC Creator">
   <meta property="og:description" content="Technology content creator & UGC creator. Product demos, reviews and short-form video that make tech feel useful, simple and human.">
-  <meta property="og:image" content="https://dayan-marrero.pages.dev/assets/images/og-image.jpg">
+  <meta property="og:image" content="https://dayan-marrero.pages.dev/assets/images/og-image.png">
   <meta property="og:url" content="https://dayan-marrero.pages.dev/">
   <meta property="og:site_name" content="Dayan Marrero">
 
@@ -26,7 +39,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dayan Marrero | Tech UGC Creator">
   <meta name="twitter:description" content="Technology content creator & UGC creator. Product demos, reviews and short-form video.">
-  <meta name="twitter:image" content="https://dayan-marrero.pages.dev/assets/images/og-image.jpg">
+  <meta name="twitter:image" content="https://dayan-marrero.pages.dev/assets/images/og-image.png">
 
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,26 +48,57 @@
 
   <!-- Estilos -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Cloudflare Web Analytics -->
+  <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "61dced39091f455983e498f2feaa5e82"}'></script>
+
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 </head>
 <body>
   <div class="site-shell">
     <header class="topbar">
-      <a class="brand" href="#home" aria-label="Dayan home"><span class="brand-mark">D.</span><span>DAYAN MARRERO</span></a>
+      <a class="brand" href="#home" aria-label="Dayan home">
+        <span class="brand-mark">D.</span>
+        <span>DAYAN MARRERO</span>
+      </a>
+
       <nav class="nav" aria-label="Main navigation">
-<a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#metrics">Metrics</a><a href="#testimonials">Testimonials</a><a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#rates" data-i18n="nav.rates">Rates</a>
+        <a href="#metrics" data-i18n="nav.metrics">Metrics</a>
+        <a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav.contact">Let's talk <span>↗</span></a>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="es" aria-label="Cambiar a español">ES</button>
+      </div>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     </header>
 
     <main>
       <section class="hero section" id="home">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="live-dot"></span> TECH • UGC • SHORT-FORM VIDEO</div>
-          <h1>Making tech feel<br> <span class="gradient-text">useful, simple</span><br>and human.</h1>
-          <p class="hero-intro">I'm Dayan, a technology content creator and UGC creator focused on practical product demonstrations, honest-style reviews, and short videos that help people understand how products fit into real life.</p>
+          <div class="eyebrow"><span class="live-dot"></span> <span data-i18n="hero.eyebrow">TECH • UGC • SHORT-FORM VIDEO</span></div>
+          <h1><span data-i18n="hero.title1">Making tech feel</span><br> <span class="gradient-text" data-i18n="hero.title2">useful, simple</span><br><span data-i18n="hero.title3">and human.</span></h1>
+          <p class="hero-intro" data-i18n="hero.intro">I'm Dayan, a technology content creator and UGC creator focused on practical product demonstrations, honest-style reviews, and short videos that help people understand how products fit into real life.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore my work <span>↓</span></a>
-            <a class="button button-quiet" href="#contact">Contact me <span>↗</span></a>
+            <a class="button button-primary" href="#work"><span data-i18n="hero.cta1">Explore my work</span> <span>↓</span></a>
+            <a class="button button-quiet" href="#contact"><span data-i18n="hero.cta2">Contact me</span> <span>↗</span></a>
           </div>
-          <div class="hero-meta"><span>Based in Cuba · Available for remote projects</span><span class="meta-line"></span><span>Content in English & Spanish</span></div>
+          <div class="hero-meta">
+            <span data-i18n="hero.meta1">Available for remote projects worldwide</span>
+            <span class="meta-line"></span>
+            <span data-i18n="hero.meta2">Content in English & Spanish</span>
+          </div>
         </div>
         <div class="hero-visual">
           <div class="orb orb-one"></div><div class="orb orb-two"></div>
@@ -63,210 +107,201 @@
             <div class="portrait-placeholder"><span class="placeholder-icon">DM</span><span>Add your portrait</span><small>assets/images/dayan-portrait.jpg</small></div>
             <div class="portrait-label"><span class="label-dot"></span> CREATOR PROFILE <span>01 / 04</span></div>
           </div>
-          <div class="floating-card followers-card"><span class="mini-label">INSTAGRAM COMMUNITY</span><strong>18K<span>+</span></strong><span class="muted">followers</span></div>
-          <div class="floating-card niche-card"><span class="niche-icon">✳</span><div><strong>Tech made practical</strong><small>Gadgets · Tips · Product demos</small></div></div>
+          <div class="floating-card followers-card">
+            <span class="mini-label" data-i18n="hero.followers">INSTAGRAM COMMUNITY</span>
+            <strong>18K<span>+</span></strong>
+            <span class="muted" data-i18n="hero.followersLabel">followers</span>
+          </div>
+          <div class="floating-card niche-card">
+            <span class="niche-icon">✳</span>
+            <div>
+              <strong data-i18n="hero.niche">Tech made practical</strong>
+              <small data-i18n="hero.nicheSub">Gadgets · Tips · Product demos</small>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="proof-strip" aria-label="Content specialties">
-        <span>PRODUCT DEMOS</span><i>✳</i><span>TECH REVIEWS</span><i>✳</i><span>SHORT-FORM VIDEO</span><i>✳</i><span>UGC STORYTELLING</span><i>✳</i><span>PRODUCT EDUCATION</span>
+        <span data-i18n="proof.1">PRODUCT DEMOS</span><i>✳</i>
+        <span data-i18n="proof.2">TECH REVIEWS</span><i>✳</i>
+        <span data-i18n="proof.3">SHORT-FORM VIDEO</span><i>✳</i>
+        <span data-i18n="proof.4">UGC STORYTELLING</span><i>✳</i>
+        <span data-i18n="proof.5">PRODUCT EDUCATION</span>
       </section>
 
       <section class="section work-section" id="work">
-        <div class="section-heading">
-          <div><div class="eyebrow">SELECTED PROJECTS</div><h2>Content that shows<br><span class="gradient-text">the product in action.</span></h2></div>
-          <p>A selection of product-focused video concepts and creator work. Replace the sample cards with your final videos, photos, and live links.</p>
+        <div class="section-heading" data-aos="fade-up">
+          <div>
+            <div class="eyebrow" data-i18n="work.eyebrow">SELECTED PROJECTS</div>
+            <h2><span data-i18n="work.title1">Content that shows</span><br><span class="gradient-text" data-i18n="work.title2">the product in action.</span></h2>
+          </div>
+          <p data-i18n="work.desc">A selection of product-focused video concepts and creator work. Replace the sample cards with your final videos, photos, and live links.</p>
         </div>
         <div class="work-grid">
-          
-<article class="project-card project-featured">
-  <div class="project-media media-antenna">
-    <img
-      src="assets/images/4g-antenna.jpg"
-      alt="4G signal antenna project"
-      onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
-    >
 
-    <div class="media-placeholder">
-      <span>01</span>
-      <strong>4G Signal Antenna</strong>
-      <small>Add product image</small>
-    </div>
+          <article class="project-card project-featured" data-aos="fade-up" data-aos-delay="0">
+            <div class="project-media media-antenna">
+              <img src="assets/images/4g-antenna.jpg" alt="4G signal antenna project" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <div class="media-placeholder">
+                <span>01</span>
+                <strong>4G Signal Antenna</strong>
+                <small>Add product image</small>
+              </div>
+              <span class="media-tag">PRODUCT DEMO</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <span class="project-type">Connectivity · Technology</span>
+                <h3>4G Signal Antenna</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p>A product-focused concept explaining the antenna's purpose, key features, and practical use in a clear, accessible format.</p>
+            <div class="tag-row">
+              <span>Feature highlights</span>
+              <span>Tech education</span>
+              <span>Short-form</span>
+            </div>
+            <a class="text-link" href="https://www.instagram.com/reel/Dcw5UQqBp1w/?stkn=bjcwcWwxaTFidnZ4" target="_blank" rel="noopener noreferrer">
+              Ver vídeo en Instagram <span>↗</span>
+            </a>
+          </article>
 
-    <span class="media-tag">PRODUCT DEMO</span>
-  </div>
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-media media-fan">
+              <img src="assets/images/f06-fan.png" alt="Rechargeable F06 fan project" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <div class="media-placeholder">
+                <span>02</span>
+                <strong>F06 Rechargeable Fan</strong>
+                <small>Add product image</small>
+              </div>
+              <span class="media-tag">UGC CONCEPT</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <span class="project-type">Home gadget</span>
+                <h3>F06 Rechargeable Fan</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p>A practical product showcase highlighting portability, everyday use, and useful features through short-form storytelling.</p>
+            <div class="tag-row">
+              <span>Product showcase</span>
+              <span>Home tech</span>
+            </div>
+            <a class="text-link" href="https://www.instagram.com/reel/DcUehvKPMCz/?stkn=cWtydGo4OWx2YTdr" target="_blank" rel="noopener noreferrer">
+              Ver vídeo en Instagram <span>↗</span>
+            </a>
+          </article>
 
-  <div class="project-info">
-    <div>
-      <span class="project-type">Connectivity · Technology</span>
-      <h3>4G Signal Antenna</h3>
-    </div>
-    <span class="project-arrow">↗</span>
-  </div>
-
-  <p>
-    A product-focused concept explaining the antenna's purpose,
-    key features, and practical use in a clear, accessible format.
-  </p>
-
-  <div class="tag-row">
-    <span>Feature highlights</span>
-    <span>Tech education</span>
-    <span>Short-form</span>
-  </div>
-
-  <a
-    class="text-link"
-    href="https://www.instagram.com/reel/Dcw5UQqBp1w/?stkn=bjcwcWwxaTFidnZ4"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Ver vídeo en Instagram <span>↗</span>
-  </a>
-</article>
-          
-<article class="project-card">
-  <div class="project-media media-fan">
-    <img
-      src="assets/images/f06-fan.png"
-      alt="Rechargeable F06 fan project"
-      onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
-    >
-    <div class="media-placeholder">
-      <span>02</span>
-      <strong>F06 Rechargeable Fan</strong>
-      <small>Add product image</small>
-    </div>
-    <span class="media-tag">UGC CONCEPT</span>
-  </div>
-
-  <div class="project-info">
-    <div>
-      <span class="project-type">Home gadget</span>
-      <h3>F06 Rechargeable Fan</h3>
-    </div>
-    <span class="project-arrow">↗</span>
-  </div>
-
-  <p>
-    A practical product showcase highlighting portability,
-    everyday use, and useful features through short-form storytelling.
-  </p>
-
-  <div class="tag-row">
-    <span>Product showcase</span>
-    <span>Home tech</span>
-  </div>
-
-  <a
-    class="text-link"
-    href="https://www.instagram.com/reel/DcUehvKPMCz/?stkn=cWtydGo4OWx2YTdr"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Ver vídeo en Instagram <span>↗</span>
-  </a>
-</article>
-          
-<article class="project-card">
-  <div class="project-media media-smartphone">
-    <img
-      src="assets/images/smartphone-tech.jpg"
-      alt="Smartphone technology content project"
-      onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
-    >
-
-    <div class="media-placeholder">
-      <span>03</span>
-      <strong>Smartphone Tech Tips</strong>
-      <small>Add a video cover</small>
-    </div>
-
-    <span class="media-tag">SOCIAL CONTENT</span>
-  </div>
-
-  <div class="project-info">
-    <div>
-      <span class="project-type">Mobile · Tutorials</span>
-      <h3>Smartphone Tech Tips</h3>
-    </div>
-    <span class="project-arrow">↗</span>
-  </div>
-
-  <p>
-    Educational content that breaks down useful technology tips
-    into concise, easy-to-follow videos.
-  </p>
-
-  <div class="tag-row">
-    <span>How-to</span>
-    <span>Video storytelling</span>
-  </div>
-
-  <a
-    class="text-link"
-    href="https://www.instagram.com/reel/DchU4D2PwNi/?stkn=Z3NoOWQ0enZtMHRo"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Ver vídeo en Instagram <span>↗</span>
-  </a>
-</article>
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-media media-smartphone">
+              <img src="assets/images/smartphone-tech.jpg" alt="Smartphone technology content project" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <div class="media-placeholder">
+                <span>03</span>
+                <strong>Smartphone Tech Tips</strong>
+                <small>Add a video cover</small>
+              </div>
+              <span class="media-tag">SOCIAL CONTENT</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <span class="project-type">Mobile · Tutorials</span>
+                <h3>Smartphone Tech Tips</h3>
+              </div>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p>Educational content that breaks down useful technology tips into concise, easy-to-follow videos.</p>
+            <div class="tag-row">
+              <span>How-to</span>
+              <span>Video storytelling</span>
+            </div>
+            <a class="text-link" href="https://www.instagram.com/reel/DchU4D2PwNi/?stkn=Z3NoOWQ0enZtMHRo" target="_blank" rel="noopener noreferrer">
+              Ver vídeo en Instagram <span>↗</span>
+            </a>
+          </article>
         </div>
         <p class="project-note"><strong>Portfolio note:</strong> Any concept that has not been commissioned or published should be described as a sample/concept project, not as a paid brand collaboration.</p>
       </section>
 
       <section class="about-section section" id="about">
         <div class="about-visual">
-          <div class="about-panel"><span class="about-symbol">✳</span><span class="eyebrow">THE CREATOR BEHIND THE CONTENT</span><div class="big-quote">“Good tech content doesn't just show what a product does. It shows why it matters.”</div><div class="quote-line"></div><span class="muted">Dayan Marrero · Tech & UGC Creator</span></div>
+          <div class="about-panel" data-aos="fade-right">
+            <span class="about-symbol">✳</span>
+            <span class="eyebrow" data-i18n="about.eyebrow">THE CREATOR BEHIND THE CONTENT</span>
+            <div class="big-quote" data-i18n="about.quote">"Good tech content doesn't just show what a product does. It shows why it matters."</div>
+            <div class="quote-line"></div>
+            <span class="muted" data-i18n="about.author">Dayan Marrero · Tech & UGC Creator</span>
+          </div>
         </div>
-        <div class="about-copy">
-          <div class="eyebrow">A LITTLE ABOUT ME</div>
-          <h2>Technology, without<br>the unnecessary jargon.</h2>
-          <p>I create technology-focused content for people who want to get more out of their devices and discover useful products. My style combines clear explanations, practical demonstrations, and a creator-first approach designed for social platforms.</p>
-          <p>From gadgets and connectivity products to everyday tech tips, I aim to make each video informative, relatable, and easy to watch.</p>
-          <div class="about-points"><div><span>01</span><div><strong>Clear communication</strong><small>Turning features into simple benefits.</small></div></div><div><span>02</span><div><strong>Product-first storytelling</strong><small>Showing how products work in real situations.</small></div></div><div><span>03</span><div><strong>Platform-native videos</strong><small>Vertical content designed for social feeds.</small></div></div></div>
+        <div class="about-copy" data-aos="fade-left">
+          <div class="eyebrow" data-i18n="about.eyebrow2">A LITTLE ABOUT ME</div>
+          <h2><span data-i18n="about.title1">Technology, without</span><br><span data-i18n="about.title2">the unnecessary jargon.</span></h2>
+          <p data-i18n="about.p1">I create technology-focused content for people who want to get more out of their devices and discover useful products. My style combines clear explanations, practical demonstrations, and a creator-first approach designed for social platforms.</p>
+          <p data-i18n="about.p2">From gadgets and connectivity products to everyday tech tips, I aim to make each video informative, relatable, and easy to watch.</p>
+          <div class="about-points">
+            <div><span>01</span><div><strong data-i18n="about.point1">Clear communication</strong><small data-i18n="about.point1sub">Turning features into simple benefits.</small></div></div>
+            <div><span>02</span><div><strong data-i18n="about.point2">Product-first storytelling</strong><small data-i18n="about.point2sub">Showing how products work in real situations.</small></div></div>
+            <div><span>03</span><div><strong data-i18n="about.point3">Platform-native videos</strong><small data-i18n="about.point3sub">Vertical content designed for social feeds.</small></div></div>
+          </div>
         </div>
       </section>
 
       <section class="stats-section section" aria-label="Creator statistics">
-        <div class="section-heading compact"><div><div class="eyebrow">CREATOR SNAPSHOT</div><h2>A community built around <span class="gradient-text">technology.</span></h2></div><p>Use current, verifiable figures here. Update these numbers whenever your insights change.</p></div>
+        <div class="section-heading compact" data-aos="fade-up">
+          <div>
+            <div class="eyebrow" data-i18n="stats.eyebrow">CREATOR SNAPSHOT</div>
+            <h2><span data-i18n="stats.title1">A community built around</span> <span class="gradient-text" data-i18n="stats.title2">technology.</span></h2>
+          </div>
+          <p data-i18n="stats.desc">Use current, verifiable figures here. Update these numbers whenever your insights change.</p>
+        </div>
         <div class="stats-grid">
-          <div class="stat-card"><span class="stat-label">INSTAGRAM FOLLOWERS</span><strong>18,000<span>+</span></strong><small>Technology-focused audience</small></div>
-          <div class="stat-card"><span class="stat-label">CONTENT FORMAT</span><strong>Short-form</strong><small>Reels and vertical video</small></div>
-          <div class="stat-card"><span class="stat-label">CORE NICHE</span><strong>Technology</strong><small>Gadgets, tips, product demos</small></div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+            <span class="stat-label" data-i18n="stats.followers">INSTAGRAM FOLLOWERS</span>
+            <strong>18,000<span>+</span></strong>
+            <small data-i18n="stats.followersSub">Technology-focused audience</small>
+          </div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+            <span class="stat-label" data-i18n="stats.format">CONTENT FORMAT</span>
+            <strong data-i18n="stats.formatValue">Short-form</strong>
+            <small data-i18n="stats.formatSub">Reels and vertical video</small>
+          </div>
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="stat-label" data-i18n="stats.niche">CORE NICHE</span>
+            <strong data-i18n="stats.nicheValue">Technology</strong>
+            <small data-i18n="stats.nicheSub">Gadgets, tips, product demos</small>
+          </div>
         </div>
       </section>
 
       <section class="section skills-section" id="skills">
-        <div class="section-heading compact"><div><div class="eyebrow">WHAT I CAN CREATE</div><h2>From product feature<br>to <span class="gradient-text">scroll-stopping video.</span></h2></div></div>
+        <div class="section-heading compact" data-aos="fade-up">
+          <div>
+            <div class="eyebrow" data-i18n="skills.eyebrow">WHAT I CAN CREATE</div>
+            <h2><span data-i18n="skills.title1">From product feature</span><br><span data-i18n="skills.title2">to</span> <span class="gradient-text" data-i18n="skills.title3">scroll-stopping video.</span></h2>
+          </div>
+        </div>
         <div class="skills-grid">
-          <div class="skill-item"><span class="skill-number">01</span><div><h3>UGC video creation</h3><p>Vertical, social-first videos that introduce a product and communicate its value.</p></div><span class="skill-icon">↗</span></div>
-          <div class="skill-item"><span class="skill-number">02</span><div><h3>Product demonstrations</h3><p>Feature walkthroughs, practical use cases, and clear product explanations.</p></div><span class="skill-icon">↗</span></div>
-          <div class="skill-item"><span class="skill-number">03</span><div><h3>Reviews & tutorials</h3><p>Informative product reviews and easy-to-follow technology tips.</p></div><span class="skill-icon">↗</span></div>
-          <div class="skill-item"><span class="skill-number">04</span><div><h3>Video storytelling</h3><p>Hooks, concise scripts, and a clear message tailored to each platform.</p></div><span class="skill-icon">↗</span></div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="0"><span class="skill-number">01</span><div><h3 data-i18n="skills.s1">UGC video creation</h3><p data-i18n="skills.s1desc">Vertical, social-first videos that introduce a product and communicate its value.</p></div><span class="skill-icon">↗</span></div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="100"><span class="skill-number">02</span><div><h3 data-i18n="skills.s2">Product demonstrations</h3><p data-i18n="skills.s2desc">Feature walkthroughs, practical use cases, and clear product explanations.</p></div><span class="skill-icon">↗</span></div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="200"><span class="skill-number">03</span><div><h3 data-i18n="skills.s3">Reviews & tutorials</h3><p data-i18n="skills.s3desc">Informative product reviews and easy-to-follow technology tips.</p></div><span class="skill-icon">↗</span></div>
+          <div class="skill-item" data-aos="fade-up" data-aos-delay="300"><span class="skill-number">04</span><div><h3 data-i18n="skills.s4">Video storytelling</h3><p data-i18n="skills.s4desc">Hooks, concise scripts, and a clear message tailored to each platform.</p></div><span class="skill-icon">↗</span></div>
         </div>
       </section>
 
-            <!-- ============================================================
-           NUEVA SECCIÓN: SERVICES
-           ============================================================ -->
-            <!-- ============================================================
-           NUEVA SECCIÓN: SERVICES
-           ============================================================ -->
       <section class="section services-section" id="services">
-        <div class="section-heading compact">
+        <div class="section-heading compact" data-aos="fade-up">
           <div>
-            <div class="eyebrow">WHAT I OFFER</div>
-            <h2>Services built for<br><span class="gradient-text">brands that need content.</span></h2>
+            <div class="eyebrow" data-i18n="services.eyebrow">WHAT I OFFER</div>
+            <h2><span data-i18n="services.title1">Services built for</span><br><span class="gradient-text" data-i18n="services.title2">brands that need content.</span></h2>
           </div>
-          <p>Pick a single deliverable or combine them into a custom package. Every project is tailored to your product, audience, and platform.</p>
+          <p data-i18n="services.desc">Pick a single deliverable or combine them into a custom package. Every project is tailored to your product, audience, and platform.</p>
         </div>
 
         <div class="services-grid">
 
-          <!-- SERVICIO 01: UGC Video -->
-          <article class="service-card">
+          <article class="service-card" data-aos="fade-up" data-aos-delay="0">
             <div class="service-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polygon points="23 7 16 12 23 17 23 7"></polygon>
@@ -274,18 +309,17 @@
               </svg>
             </div>
             <span class="service-number">01</span>
-            <h3>UGC Video</h3>
-            <p>Vertical, social-first videos that introduce your product and show how it fits into real life. Perfect for Reels, TikTok, and paid ads.</p>
+            <h3 data-i18n="services.ugc.title">UGC Video</h3>
+            <p data-i18n="services.ugc.desc">Vertical, social-first videos that introduce your product and show how it fits into real life. Perfect for Reels, TikTok, and paid ads.</p>
             <ul class="service-list">
-              <li>1 video (15–60s)</li>
-              <li>Script + hook</li>
-              <li>Vertical 9:16</li>
-              <li>1 round of revisions</li>
+              <li data-i18n="services.ugc.li1">1 video (15–60s)</li>
+              <li data-i18n="services.ugc.li2">Script + hook</li>
+              <li data-i18n="services.ugc.li3">Vertical 9:16</li>
+              <li data-i18n="services.ugc.li4">1 round of revisions</li>
             </ul>
           </article>
 
-          <!-- SERVICIO 02: Product Demo -->
-          <article class="service-card">
+          <article class="service-card" data-aos="fade-up" data-aos-delay="100">
             <div class="service-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
@@ -294,36 +328,34 @@
               </svg>
             </div>
             <span class="service-number">02</span>
-            <h3>Product Demo</h3>
-            <p>A clear, practical walkthrough of your product's features and how they work — ideal for tech, gadgets, and connectivity products.</p>
+            <h3 data-i18n="services.demo.title">Product Demo</h3>
+            <p data-i18n="services.demo.desc">A clear, practical walkthrough of your product's features and how they work — ideal for tech, gadgets, and connectivity products.</p>
             <ul class="service-list">
-              <li>Feature walkthrough</li>
-              <li>Real use cases</li>
-              <li>Short-form video</li>
-              <li>1 round of revisions</li>
+              <li data-i18n="services.demo.li1">Feature walkthrough</li>
+              <li data-i18n="services.demo.li2">Real use cases</li>
+              <li data-i18n="services.demo.li3">Short-form video</li>
+              <li data-i18n="services.demo.li4">1 round of revisions</li>
             </ul>
           </article>
 
-          <!-- SERVICIO 03: Review & Tutorial -->
-          <article class="service-card">
+          <article class="service-card" data-aos="fade-up" data-aos-delay="200">
             <div class="service-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
               </svg>
             </div>
             <span class="service-number">03</span>
-            <h3>Review & Tutorial</h3>
-            <p>Honest-style reviews and easy-to-follow tutorials that help your audience understand the product and trust the brand.</p>
+            <h3 data-i18n="services.review.title">Review & Tutorial</h3>
+            <p data-i18n="services.review.desc">Honest-style reviews and easy-to-follow tutorials that help your audience understand the product and trust the brand.</p>
             <ul class="service-list">
-              <li>Review or how-to</li>
-              <li>Voiceover or on-cam</li>
-              <li>Vertical video</li>
-              <li>1 round of revisions</li>
+              <li data-i18n="services.review.li1">Review or how-to</li>
+              <li data-i18n="services.review.li2">Voiceover or on-cam</li>
+              <li data-i18n="services.review.li3">Vertical video</li>
+              <li data-i18n="services.review.li4">1 round of revisions</li>
             </ul>
           </article>
 
-          <!-- SERVICIO 04: Content Package -->
-          <article class="service-card">
+          <article class="service-card" data-aos="fade-up" data-aos-delay="300">
             <div class="service-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
@@ -331,317 +363,404 @@
               </svg>
             </div>
             <span class="service-number">04</span>
-            <h3>Content Package</h3>
-            <p>Multiple videos delivered together for a full campaign — best value and consistency for your brand's social presence.</p>
+            <h3 data-i18n="services.pack.title">Content Package</h3>
+            <p data-i18n="services.pack.desc">Multiple videos delivered together for a full campaign — best value and consistency for your brand's social presence.</p>
             <ul class="service-list">
-              <li>3–5 videos</li>
-              <li>Consistent style</li>
-              <li>Priority delivery</li>
-              <li>Revisions included</li>
+              <li data-i18n="services.pack.li1">3–5 videos</li>
+              <li data-i18n="services.pack.li2">Consistent style</li>
+              <li data-i18n="services.pack.li3">Priority delivery</li>
+              <li data-i18n="services.pack.li4">Revisions included</li>
             </ul>
           </article>
 
         </div>
 
-                <div class="services-note">
+        <div class="services-note">
           <span class="live-dot"></span>
-          <span>All services include usage rights for organic social. Paid ads & whitelisting available on request.</span>
+          <span data-i18n="services.note">All services include usage rights for organic social. Paid ads & whitelisting available on request.</span>
         </div>
 
         <div class="services-cta">
           <a class="button button-primary" href="assets/media-kit.pdf" download="Dayan-Marrero-Media-Kit.pdf">
-            Download Media Kit <span>↓</span>
+            <span data-i18n="services.cta">Download Media Kit</span> <span>↓</span>
           </a>
         </div>
       </section>
 
-      <!-- ============================================================
-           NUEVA SECCIÓN: MEJORES MÉTRICAS POR VIDEO
-           ============================================================ -->
-      <section class="section metrics-section" id="metrics">
-        <div class="section-heading compact">
+      <section class="section rates-section" id="rates">
+        <div class="section-heading compact" data-aos="fade-up">
           <div>
-            <div class="eyebrow">BEST PERFORMING VIDEOS</div>
-            <h2>Real results from<br><span class="gradient-text">real content.</span></h2>
+            <div class="eyebrow" data-i18n="rates.eyebrow">RATES & PRICING</div>
+            <h2><span data-i18n="rates.title1">Every project is</span><br><span class="gradient-text" data-i18n="rates.title2">quoted individually.</span></h2>
           </div>
-          <p>A snapshot of my top-performing videos on Instagram. Each card shows the actual metrics from the platform — views, reach, and engagement.</p>
+          <p data-i18n="rates.desc">Pricing depends on scope, deliverables, and usage. Request a custom quote for your project and I'll get back to you with a tailored proposal.</p>
+        </div>
+
+        <div class="rates-grid">
+
+          <article class="rate-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="rate-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+            </div>
+            <h3 data-i18n="services.ugc.title">UGC Video</h3>
+            <p class="rate-label" data-i18n="rates.label">Custom quote</p>
+            <ul class="rate-list">
+              <li data-i18n="services.ugc.li1">1 video (15–60s)</li>
+              <li data-i18n="services.ugc.li2">Script + hook</li>
+              <li data-i18n="services.ugc.li3">Vertical 9:16</li>
+              <li data-i18n="services.ugc.li4">Unlimited revisions</li>
+            </ul>
+            <a class="rate-cta" href="#contact"><span data-i18n="rates.cta">Request a quote</span> <span>↗</span></a>
+          </article>
+
+          <article class="rate-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="rate-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3 data-i18n="services.demo.title">Product Demo</h3>
+            <p class="rate-label" data-i18n="rates.label">Custom quote</p>
+            <ul class="rate-list">
+              <li data-i18n="services.demo.li1">Feature walkthrough</li>
+              <li data-i18n="services.demo.li2">Real use cases</li>
+              <li data-i18n="services.demo.li3">Short-form video</li>
+              <li data-i18n="services.demo.li4">Unlimited revisions</li>
+            </ul>
+            <a class="rate-cta" href="#contact"><span data-i18n="rates.cta">Request a quote</span> <span>↗</span></a>
+          </article>
+
+          <article class="rate-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="rate-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 data-i18n="services.review.title">Review & Tutorial</h3>
+            <p class="rate-label" data-i18n="rates.label">Custom quote</p>
+            <ul class="rate-list">
+              <li data-i18n="services.review.li1">Review or how-to</li>
+              <li data-i18n="services.review.li2">Voiceover or on-cam</li>
+              <li data-i18n="services.review.li3">Vertical video</li>
+              <li data-i18n="services.review.li4">Unlimited revisions</li>
+            </ul>
+            <a class="rate-cta" href="#contact"><span data-i18n="rates.cta">Request a quote</span> <span>↗</span></a>
+          </article>
+
+          <article class="rate-card rate-card-featured" data-aos="fade-up" data-aos-delay="300">
+            <span class="rate-badge" data-i18n="rates.badge">BEST VALUE</span>
+            <div class="rate-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 data-i18n="services.pack.title">Content Package</h3>
+            <p class="rate-label" data-i18n="rates.label">Custom quote</p>
+            <ul class="rate-list">
+              <li data-i18n="services.pack.li1">3–5 videos</li>
+              <li data-i18n="services.pack.li2">Consistent style</li>
+              <li data-i18n="services.pack.li3">Priority delivery</li>
+              <li data-i18n="services.pack.li4">Unlimited revisions</li>
+            </ul>
+            <a class="rate-cta" href="#contact"><span data-i18n="rates.cta">Request a quote</span> <span>↗</span></a>
+          </article>
+
+        </div>
+
+        <div class="rates-note">
+          <span class="live-dot"></span>
+          <span data-i18n="rates.note">All prices are tailored to your project. Final quote includes scope, deliverables, timeline, and full usage rights.</span>
+        </div>
+      </section>
+
+      <section class="section metrics-section" id="metrics">
+        <div class="section-heading compact" data-aos="fade-up">
+          <div>
+            <div class="eyebrow" data-i18n="metrics.eyebrow">BEST PERFORMING VIDEOS</div>
+            <h2><span data-i18n="metrics.title1">Real results from</span><br><span class="gradient-text" data-i18n="metrics.title2">real content.</span></h2>
+          </div>
+          <p data-i18n="metrics.desc">A snapshot of my top-performing videos on Instagram. Each card shows the actual metrics from the platform — views, reach, and engagement.</p>
         </div>
 
         <div class="metrics-grid">
 
-          <!-- ============ MÉTRICA 01 ============ -->
-          <article class="metric-card">
+          <article class="metric-card" data-aos="fade-up" data-aos-delay="0">
             <div class="metric-media">
-              <img
-                src="assets/images/metric-01.jpeg"
-                alt="Metrics for top performing video 1"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
-              >
-              <div class="metric-placeholder">
-                <span>01</span>
-                <strong>Add metrics screenshot</strong>
-                <small>assets/images/metric-01.jpg</small>
-              </div>
-              <span class="metric-tag">TOP VIDEO</span>
+              <img src="assets/images/metric-01.jpeg" alt="Metrics for top performing video 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <div class="metric-placeholder"><span>01</span><strong>Add metrics screenshot</strong><small>assets/images/metric-01.jpg</small></div>
+              <span class="metric-tag" data-i18n="metrics.tag">TOP VIDEO</span>
             </div>
-            <div class="metric-info">
-              <h3>App Configuration</h3>
-            </div>
-            <a
-              class="button button-primary metric-button"
-              href="https://www.instagram.com/reel/DchU4D2PwNi/?stkn=Z3NoOWQ0enZtMHRo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver video <span>↗</span>
+            <div class="metric-info"><h3>App Configuration</h3></div>
+            <a class="button button-primary metric-button" href="https://www.instagram.com/reel/DchU4D2PwNi/?stkn=Z3NoOWQ0enZtMHRo" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="metrics.btn">View video</span> <span>↗</span>
             </a>
           </article>
 
-          <!-- ============ MÉTRICA 02 ============ -->
-          <article class="metric-card">
+          <article class="metric-card" data-aos="fade-up" data-aos-delay="100">
             <div class="metric-media">
-              <img
-                src="assets/images/metric-02.jpeg"
-                alt="Metrics for top performing video 2"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
-              >
-              <div class="metric-placeholder">
-                <span>02</span>
-                <strong>Add metrics screenshot</strong>
-                <small>assets/images/metric-02.jpg</small>
-              </div>
-              <span class="metric-tag">TOP VIDEO</span>
+              <img src="assets/images/metric-02.jpeg" alt="Metrics for top performing video 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <div class="metric-placeholder"><span>02</span><strong>Add metrics screenshot</strong><small>assets/images/metric-02.jpg</small></div>
+              <span class="metric-tag" data-i18n="metrics.tag">TOP VIDEO</span>
             </div>
-            <div class="metric-info">
-              <h3>Tutorial</h3>
-            </div>
-            <a
-              class="button button-primary metric-button"
-              href="https://www.instagram.com/reel/DaeTeqANbSN/?stkn=MWg0NW94ZHl3Mnc1aQ=="
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver video <span>↗</span>
+            <div class="metric-info"><h3>Tutorial</h3></div>
+            <a class="button button-primary metric-button" href="https://www.instagram.com/reel/DaeTeqANbSN/?stkn=MWg0NW94ZHl3Mnc1aQ==" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="metrics.btn">View video</span> <span>↗</span>
             </a>
           </article>
 
-          <!-- ============ MÉTRICA 03 ============ -->
-          <article class="metric-card">
+          <article class="metric-card" data-aos="fade-up" data-aos-delay="200">
             <div class="metric-media">
-              <img
-                src="assets/images/metric-03.jpeg"
-                alt="Metrics for top performing video 3"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
-              >
-              <div class="metric-placeholder">
-                <span>03</span>
-                <strong>Add metrics screenshot</strong>
-                <small>assets/images/metric-03.jpg</small>
-              </div>
-              <span class="metric-tag">TOP VIDEO</span>
+              <img src="assets/images/metric-03.jpeg" alt="Metrics for top performing video 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <div class="metric-placeholder"><span>03</span><strong>Add metrics screenshot</strong><small>assets/images/metric-03.jpg</small></div>
+              <span class="metric-tag" data-i18n="metrics.tag">TOP VIDEO</span>
             </div>
-            <div class="metric-info">
-              <h3>App Walkthrough</h3>
-            </div>
-            <a
-              class="button button-primary metric-button"
-              href="https://www.instagram.com/reel/DaRPbm1Pb8V/?stkn=c2w1dmtud3dtd2oz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver video <span>↗</span>
+            <div class="metric-info"><h3>App Walkthrough</h3></div>
+            <a class="button button-primary metric-button" href="https://www.instagram.com/reel/DaRPbm1Pb8V/?stkn=c2w1dmtud3dtd2oz" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="metrics.btn">View video</span> <span>↗</span>
             </a>
           </article>
 
-          <!-- ============ MÉTRICA 04 ============ -->
-          <article class="metric-card">
+          <article class="metric-card" data-aos="fade-up" data-aos-delay="300">
             <div class="metric-media">
-              <img
-                src="assets/images/metric-04.jpeg"
-                alt="Metrics for top performing video 4"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
-              >
-              <div class="metric-placeholder">
-                <span>04</span>
-                <strong>Add metrics screenshot</strong>
-                <small>assets/images/metric-04.jpg</small>
-              </div>
-              <span class="metric-tag">TOP VIDEO</span>
+              <img src="assets/images/metric-04.jpeg" alt="Metrics for top performing video 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <div class="metric-placeholder"><span>04</span><strong>Add metrics screenshot</strong><small>assets/images/metric-04.jpg</small></div>
+              <span class="metric-tag" data-i18n="metrics.tag">TOP VIDEO</span>
             </div>
-            <div class="metric-info">
-              <h3>Tech Tutorial</h3>
-            </div>
-            <a
-              class="button button-primary metric-button"
-              href="https://www.instagram.com/reel/DaOySOEuApv/?stkn=MXE0dTFtc2Z1ZHh5aQ=="
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver video <span>↗</span>
+            <div class="metric-info"><h3>Tech Tutorial</h3></div>
+            <a class="button button-primary metric-button" href="https://www.instagram.com/reel/DaOySOEuApv/?stkn=MXE0dTFtc2Z1ZHh5aQ==" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="metrics.btn">View video</span> <span>↗</span>
             </a>
           </article>
 
-
-          <article class="metric-card">
+          <article class="metric-card" data-aos="fade-up" data-aos-delay="400">
             <div class="metric-media">
-              <img
-                src="assets/images/metric-05.jpeg"
-                alt="Metrics for top performing video 5"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
-              >
-              <div class="metric-placeholder">
-                <span>04</span>
-                <strong>Add metrics screenshot</strong>
-                <small>assets/images/metric-05.jpg</small>
-              </div>
-              <span class="metric-tag">TOP VIDEO</span>
+              <img src="assets/images/metric-05.jpeg" alt="Metrics for top performing video 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <div class="metric-placeholder"><span>05</span><strong>Add metrics screenshot</strong><small>assets/images/metric-05.jpg</small></div>
+              <span class="metric-tag" data-i18n="metrics.tag">TOP VIDEO</span>
             </div>
-            <div class="metric-info">
-              <h3>Tech Tutorial</h3>
-            </div>
-            <a
-              class="button button-primary metric-button"
-              href="https://www.instagram.com/reel/DaMIqTMReqM/?stkn=OWxnMGt5cm4ydjlq"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver video <span>↗</span>
+            <div class="metric-info"><h3>Tech Tutorial</h3></div>
+            <a class="button button-primary metric-button" href="https://www.instagram.com/reel/DaMIqTMReqM/?stkn=OWxnMGt5cm4ydjlq" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="metrics.btn">View video</span> <span>↗</span>
             </a>
           </article>
         </div>
       </section>
-      <!-- ============ FIN SECCIÓN MÉTRICAS ============ -->
 
-            <!-- ============================================================
-           NUEVA SECCIÓN: TESTIMONIALS
-           ============================================================ -->
       <section class="section testimonials-section" id="testimonials">
-        <div class="section-heading compact">
+        <div class="section-heading compact" data-aos="fade-up">
           <div>
-            <div class="eyebrow">WHAT PEOPLE SAY</div>
-            <h2>Trusted by brands<br>and <span class="gradient-text">creators.</span></h2>
+            <div class="eyebrow" data-i18n="testimonials.eyebrow">WHAT PEOPLE SAY</div>
+            <h2><span data-i18n="testimonials.title1">Trusted by brands</span><br><span data-i18n="testimonials.title2">and</span> <span class="gradient-text" data-i18n="testimonials.title3">creators.</span></h2>
           </div>
-          <p>Real messages, real feedback, real results. Here's what brands and followers have said about my content.</p>
+          <p data-i18n="testimonials.desc">Real messages, real feedback, real results. Here's what brands and followers have said about my content.</p>
         </div>
 
         <div class="testimonials-grid">
 
-          <!-- TESTIMONIO 01: DM de marca -->
-          <article class="testimonial-card">
+          <article class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
             <div class="testimonial-quote-mark">"</div>
-            <p class="testimonial-text">
-              We loved your tech content style. Would you be interested in creating a UGC video for our new product launch?
-            </p>
+            <p class="testimonial-text">We loved your tech content style. Would you be interested in creating a UGC video for our new product launch?</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar">BR</div>
-              <div>
-                <strong>Desbloq.co</strong>
-                <small>Marketing Manager</small>
-              </div>
+              <div><strong>Desbloq.co</strong><small>Marketing Manager</small></div>
               <span class="testimonial-source">via DM</span>
             </div>
           </article>
 
-          <!-- TESTIMONIO 02: Comentario de seguidor -->
-          <article class="testimonial-card">
+          <article class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
             <div class="testimonial-quote-mark">"</div>
-            <p class="testimonial-text">
-              Finally someone who explains tech without making it complicated. Your videos actually help me understand what I'm buying.
-            </p>
+            <p class="testimonial-text">Finally someone who explains tech without making it complicated. Your videos actually help me understand what I'm buying.</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar">IG</div>
-              <div>
-                <strong>@dennisramos.actor</strong>
-                <small>Instagram follower</small>
-              </div>
+              <div><strong>@dennisramos.actor</strong><small>Instagram follower</small></div>
               <span class="testimonial-source">via comment</span>
             </div>
           </article>
 
-          <!-- TESTIMONIO 03: Resultado de video -->
-          <article class="testimonial-card testimonial-highlight">
+          <article class="testimonial-card testimonial-highlight" data-aos="fade-up" data-aos-delay="200">
             <div class="testimonial-quote-mark">"</div>
-            <p class="testimonial-text">
-              This video reached over 500K views and brought a huge wave of engagement to our product page.
-            </p>
+            <p class="testimonial-text">This video reached over 500K views and brought a huge wave of engagement to our product page.</p>
             <div class="testimonial-author">
               <div class="testimonial-avatar">▶</div>
-              <div>
-                <strong>Viral Performance</strong>
-                <small>Instagram Reel · 500K+ views</small>
-              </div>
+              <div><strong>Viral Performance</strong><small>Instagram Reel · 500K+ views</small></div>
               <span class="testimonial-source">result</span>
             </div>
           </article>
 
         </div>
 
-        <!-- Bloque de capturas de DMs (opcional) -->
-                <!-- Bloque de capturas de correos (collab proposals) -->
         <div class="testimonials-proof">
           <div class="proof-heading">
             <span class="live-dot"></span>
-            <span>REAL COLLABORATION PROPOSALS</span>
+            <span data-i18n="testimonials.proofHeading">REAL COLLABORATION PROPOSALS</span>
           </div>
           <div class="proof-grid proof-grid-email">
             <div class="proof-item proof-item-email">
-              <img
-                src="assets/images/testimonial-01.jpg"
-                alt="Brand collaboration email proposal 1"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
-              >
-              <div class="proof-placeholder">
-                <span>EMAIL 01</span>
-                <small>Add screenshot · testimonial-01.png</small>
-              </div>
+              <img src="assets/images/testimonial-01.jpg" alt="Brand collaboration email proposal 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <div class="proof-placeholder"><span>EMAIL 01</span><small>Add screenshot · testimonial-01.png</small></div>
             </div>
             <div class="proof-item proof-item-email">
-              <img
-                src="assets/images/testimonial-02.jpg"
-                alt="Brand collaboration email proposal 2"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'"
-              >
-              <div class="proof-placeholder">
-                <span>EMAIL 02</span>
-                <small>Add screenshot · testimonial-02.png</small>
-              </div>
+              <img src="assets/images/testimonial-02.jpg" alt="Brand collaboration email proposal 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <div class="proof-placeholder"><span>EMAIL 02</span><small>Add screenshot · testimonial-02.png</small></div>
             </div>
           </div>
         </div>
 
       </section>
 
-            <section class="contact-section section" id="contact">
-        <div class="contact-card">
-          <div class="eyebrow"><span class="live-dot"></span> OPEN TO COLLABORATIONS</div>
-          <h2>Have a product that<br>deserves to be <span class="gradient-text">seen?</span></h2>
-          <p>Let's create useful, engaging content for your brand.</p>
+      <section class="section faq-section" id="faq">
+        <div class="section-heading compact" data-aos="fade-up">
+          <div>
+            <div class="eyebrow" data-i18n="faq.eyebrow">FREQUENTLY ASKED QUESTIONS</div>
+            <h2><span data-i18n="faq.title1">Everything you need</span><br><span data-i18n="faq.title2">to know</span> <span class="gradient-text" data-i18n="faq.title3">before we start.</span></h2>
+          </div>
+          <p data-i18n="faq.desc">Quick answers to the most common questions about working together.</p>
+        </div>
 
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/xrpbndpn"
-            method="POST"
-          >
+        <div class="faq-list" data-aos="fade-up">
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-number">01</span>
+              <span class="faq-question" data-i18n="faq.q1">What are your rates?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a1">Rates are on request and depend on the project scope, deliverables, and usage. Every collaboration is quoted individually based on what you need.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-number">02</span>
+              <span class="faq-question" data-i18n="faq.q2">How long does delivery take?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a2">Most projects are delivered within 10 to 12 business days after receiving the product and the brief. Timelines may vary depending on the complexity and number of videos.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-number">03</span>
+              <span class="faq-question" data-i18n="faq.q3">How many revisions are included?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a3">Revisions are unlimited. I'll keep refining the content until it matches the brief and you're fully satisfied with the final result.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-number">04</span>
+              <span class="faq-question" data-i18n="faq.q4">What rights do I get over the video?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a4">You get full usage rights over the final video. You can use it for organic social, paid ads, whitelisting, or any other purpose — no restrictions.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-number">05</span>
+              <span class="faq-question" data-i18n="faq.q5">Do you accept physical products?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a5">Yes. I accept physical products shipped to me for filming. This is the best way to create authentic, hands-on content that truly showcases your product.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-number">06</span>
+              <span class="faq-question" data-i18n="faq.q6">What product categories do you work with?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a6">I specialize in technology, gadgets, and home decor. If your product fits one of these categories, we're a great match. For other categories, feel free to reach out and I'll let you know if it's a fit.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-number">07</span>
+              <span class="faq-question" data-i18n="faq.q7">What languages do you create content in?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a7">I create content in both English and Spanish — including voiceover, on-camera delivery, and captions. I can produce bilingual versions of the same video if needed.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-number">08</span>
+              <span class="faq-question" data-i18n="faq.q8">How does the collaboration process work?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a8">The process is simple:</p>
+              <ol class="faq-steps">
+                <li data-i18n="faq.a8.1">You reach out with your product and goals.</li>
+                <li data-i18n="faq.a8.2">We align on the brief, style, deliverables, and timeline.</li>
+                <li data-i18n="faq.a8.3">I create the content and send a first draft.</li>
+                <li data-i18n="faq.a8.4">You request any changes you'd like.</li>
+                <li data-i18n="faq.a8.5">I deliver the final files once you're happy.</li>
+              </ol>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-number">09</span>
+              <span class="faq-question" data-i18n="faq.q9">How do payments work?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a9">Payments are handled through PayPal. A deposit is required before production begins, and the remaining balance is due on delivery.</p>
+            </div>
+          </details>
+
+        </div>
+      </section>
+
+      <section class="contact-section section" id="contact">
+        <div class="contact-card" data-aos="zoom-in">
+          <div class="eyebrow"><span class="live-dot"></span> <span data-i18n="contact.eyebrow">OPEN TO COLLABORATIONS</span></div>
+          <h2><span data-i18n="contact.title1">Have a product that</span><br><span data-i18n="contact.title2">deserves to be</span> <span class="gradient-text" data-i18n="contact.title3">seen?</span></h2>
+          <p data-i18n="contact.desc">Let's create useful, engaging content for your brand.</p>
+
+          <form class="contact-form" action="https://formspree.io/f/xrpbndpn" method="POST">
             <div class="form-row">
               <div class="form-field">
-                <label for="name">Your name</label>
-                <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                <label for="name" data-i18n="contact.form.name">Your name</label>
+                <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.namePh" placeholder="Jane Doe" required>
               </div>
               <div class="form-field">
-                <label for="email">Your email</label>
-                <input type="email" id="email" name="email" placeholder="jane@brand.com" required>
+                <label for="email" data-i18n="contact.form.email">Your email</label>
+                <input type="email" id="email" name="email" data-i18n-placeholder="contact.form.emailPh" placeholder="jane@brand.com" required>
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-field">
-                <label for="brand">Brand / Company</label>
-                <input type="text" id="brand" name="brand" placeholder="Brand name">
+                <label for="brand" data-i18n="contact.form.brand">Brand / Company</label>
+                <input type="text" id="brand" name="brand" data-i18n-placeholder="contact.form.brandPh" placeholder="Brand name">
               </div>
               <div class="form-field">
-                <label for="service">Service interested in</label>
+                <label for="service" data-i18n="contact.form.service">Service interested in</label>
                 <select id="service" name="service">
-                  <option value="">Select a service</option>
+                  <option value="" data-i18n="contact.form.servicePh">Select a service</option>
                   <option value="UGC Video">UGC Video</option>
                   <option value="Product Demo">Product Demo</option>
                   <option value="Review & Tutorial">Review & Tutorial</option>
@@ -652,25 +771,25 @@
             </div>
 
             <div class="form-field">
-              <label for="message">Tell me about your project</label>
-              <textarea id="message" name="message" rows="5" placeholder="What product are we talking about? What's the goal?" required></textarea>
+              <label for="message" data-i18n="contact.form.message">Tell me about your project</label>
+              <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.form.messagePh" placeholder="What product are we talking about? What's the goal?" required></textarea>
             </div>
 
             <input type="text" name="_gotcha" style="display:none">
 
             <button type="submit" class="button button-primary form-submit">
-              Send message <span>↗</span>
+              <span data-i18n="contact.form.submit">Send message</span> <span>↗</span>
             </button>
           </form>
 
           <div class="form-success" id="formSuccess" hidden>
             <div class="form-success-icon">✓</div>
-            <h3>Message sent!</h3>
-            <p>Thanks for reaching out. I'll get back to you within 24–48 hours.</p>
+            <h3 data-i18n="contact.form.success">Message sent!</h3>
+            <p data-i18n="contact.form.successDesc">Thanks for reaching out. I'll get back to you within 24–48 hours.</p>
           </div>
 
           <div class="contact-actions">
-            <a class="button button-quiet" href="assets/media-kit.pdf" download="Dayan-Marrero-Media-Kit.pdf">Media Kit <span>↓</span></a>
+            <a class="button button-quiet" href="assets/media-kit.pdf" download="Dayan-Marrero-Media-Kit.pdf"><span data-i18n="contact.mediaKit">Media Kit</span> <span>↓</span></a>
             <a class="button button-quiet" href="https://www.instagram.com/dayan.marrero1/" target="_blank" rel="noreferrer">Instagram <span>↗</span></a>
             <a class="button button-quiet" href="https://www.tiktok.com/@Dayan.tech.home" target="_blank" rel="noreferrer">TikTok <span>↗</span></a>
           </div>
@@ -679,8 +798,33 @@
         </div>
       </section>
     </main>
-    <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">D.</span><span>DAYAN MARRERO</span></a><span>Technology Content Creator · UGC Creator</span><a href="#home">Back to top ↑</a><small>© <span id="year"></span> Dayan Marrero. All rights reserved.</small></footer>
+
+    <footer class="footer">
+      <a class="brand" href="#home"><span class="brand-mark">D.</span><span>DAYAN MARRERO</span></a>
+      <span data-i18n="footer.tagline">Technology Content Creator · UGC Creator</span>
+      <a href="#home" data-i18n="footer.backTop">Back to top ↑</a>
+      <small>© <span id="year"></span> Dayan Marrero. <span data-i18n="footer.rights">All rights reserved.</span></small>
+    </footer>
   </div>
+
   <script src="script.js"></script>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/5356431709?text=Hi%20Dayan!%20I'm%20interested%20in%20collaborating%20with%20you" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 60,
+      delay: 0
+    });
+  </script>
 </body>
 </html>
